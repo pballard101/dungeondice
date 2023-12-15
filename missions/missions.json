@@ -1,0 +1,14 @@
+[
+    {
+        "missionId": 1,
+        "missionName": "Blue Beard",
+        "prologue": "Avast, adventurers! Ready yer courage and sharpen yer wits, for a quest of puzzling pirates and cursed treasures awaits! Navigate the murky mysteries and sail through secret storms in the daunting tale of the Curse of Bluebeard! Legend tells of the mighty pirate Bluebeard, a wizard of the waters whose blue beard shimmered with strange magic. His ghostly galleon sailed through shadows and storms, but a curse took hold of his ship, hiding his treasure in a maze of mysteries and magic! It’s time for brave hearts to set sail! Decode riddles, face ghostly challenges, and unveil the hidden paths of the pirate's treasure. Conquer the curse, grab the glittering gold, and become the heroes of this haunted high-seas adventure!",
+        "totalStoryTiles": 3
+    },
+    {
+        "missionId": 2,
+        "missionName": "Fallen Faries",
+        "prologue": "fallen faires are coming Prolog",
+        "totalStoryTiles": 3
+    }
+]

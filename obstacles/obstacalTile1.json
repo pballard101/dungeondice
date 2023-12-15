@@ -1,0 +1,7 @@
+{
+    "obstacal": 1,
+    "description": "This room is a lava floor with a naroow path to door on the other side (place a door as far from the door you entered) everytile you move roll a 1d6 if you are 3 or higher you take 2 damage, but continue your turn",
+    "grid": [
+    ],
+    "additionalData": "Any other data you'd like to store for this tile"
+}

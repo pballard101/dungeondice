@@ -1,0 +1,12 @@
+{
+    "mission": 1,
+    "tileNumber": 3,
+    "description": "Setup the room like the image below . Bluebeard is the d10 the d6 are healers and will always try to heal Bluebeard if he is missing any health else they will attack with a 1d4. Blue beard is mighty and attacks with a 1d4+3.",
+    "grid": [ 
+        ["6", "", "","6"],
+        ["", "3", "",""],
+        ["", "", "10",""],
+        ["", "", "","6"]
+    ],
+    "additionalData": "Any other data you'd like to store for this tile"
+}

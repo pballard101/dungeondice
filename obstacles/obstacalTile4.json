@@ -1,0 +1,11 @@
+{
+    "obstacle": 4,
+    "description": "The Unpredictable Teleportation Room: As you navigate this room, each step can bring a surprise. Be careful of teleportation pads and traps! Roll a 1d6 every tile. On a 1-2 you advance safely. Roll a 3 you have sprung a trap and loose 2 health and end your turn. Roll a 4 and the floor tile crumbles you move back one and end your turn ( this tile cannot be used by anyone until next turn) Roll a 5-6 you have hit a teleport pad, you will roll a 1d4 twice to find your new place in the room base on the grid below, you get to continue moving and rolling for each tile",
+    "grid": [
+        ["1-1", "1-2", "1-3", "1-4"],
+        ["2-1", "2-2", "2-3", "2-4"],
+        ["3-1", "3-2", "3-3", "3-4"],
+        ["4-1", "4-2", "4-3", "4-4"]
+    ],
+    "additionalInstructions": ""
+}

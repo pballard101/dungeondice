@@ -1,0 +1,10 @@
+{
+    "mission": 1,
+    "tileNumber": 2,
+    "description": "Yeh must walk the plank for your deeds against the mighty Bluebeard. Each player must stack 5 1d6 and hold them up for 90 seconds, click the start button below. If you can balance the dice you will lose a life. If you succeed, gain 1 life!",
+    "grid": [
+    ],
+    "additionalData": "Any other data you'd like to store for this tile",
+    "game_mechanic_type": "timer",
+    "timer_length": "90"
+}

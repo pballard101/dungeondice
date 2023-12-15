@@ -1,0 +1,6 @@
+{
+    "obstacle": 3,
+    "description": "Wind Tunnel Room: Powerful gusts of wind push you towards spiked walls. Roll a 1d6 each turn. 4 or above to advance, 3 or below to be pushed back. Touching the spikes causes 2 damage.",
+    "grid": [],
+    "additionalData": "Spiked walls on one side"
+}

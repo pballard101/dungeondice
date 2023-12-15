@@ -1,0 +1,8 @@
+{
+    "mission": 1,
+    "tileNumber": 1,
+    "description": "You scurvy swashbuckler!  Your alley reading this card has their head on the chopping block. Save them by playing a game of hangman! You can guess any letter but any that do not exist you will lose 1 health. Play a game of hangman. Pick a hero to be on the chopping block they will run the game of hangman for the rest of the group, take out a piece of paper and start a game of hangman. If there are 7 wrong letters you will lose 1 life and you will start a new game until you have won a game! Please use a fun phrase like “Dead men tell no tales” or some other inspiring pirate phrase.",
+    "grid": [
+    ],
+    "additionalData": "Any other data you'd like to store for this tile"
+}

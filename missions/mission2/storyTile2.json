@@ -1,0 +1,12 @@
+{
+    "mission": 1,
+    "tileNumber": 1,
+    "description": "Some description for mission 2, tile 2.",
+    "grid": [
+        ["empty", "empty", "enemy"],
+        ["empty", "empty", "empty"],
+        ["empty", "empty", "empty"]
+    ],
+    "additionalData": "Any other data you'd like to store for this tile"
+}
+

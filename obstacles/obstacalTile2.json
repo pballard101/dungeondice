@@ -1,0 +1,11 @@
+{
+    "obstacal": 2,
+    "description": "Mouse Trap, each mouse will be represented by a d6 dice, we must round them all up each turn get next to one mouse and try to get a 3 of a kind with its number in 4 rolls, if you failed to get a 3 of a kind in 4 rolls on your turn loose 2 health, once all the mice havce been caught place a door to leave the room",
+    "grid": [
+        ["3", "", "", ""],
+        ["", "4", "", ""],
+        ["", "", "2", ""],
+        ["", "", "", "1"]
+    ],
+    "additionalData": "Any other data you'd like to store for this tile"
+}
