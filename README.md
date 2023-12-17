@@ -37,5 +37,5 @@ Your ideas, code, and stories can help DungeonDice grow. Join us in creating a w
 ### Running the companion app locally
 1. install Node.js 
 2. npm install
-3. npm init app.js
+3. node app.js
 4. open web browser to http://localhost:3000 to play 
