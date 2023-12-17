@@ -100,3 +100,8 @@ img {
 #drawCardButton:hover {
     background-color: #0056b3; /* Darkens the button color on hover for visual feedback */
 }
+#rules-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
