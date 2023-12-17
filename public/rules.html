@@ -31,19 +31,25 @@
             margin: 0 5px;
             text-decoration: none;
         }
+        #close-rules {
+           position: fixed;
+           top: 10px;
+           right: 10px;
+           cursor: pointer;
+        }
         /* Additional styling can be added here */
     </style>
 </head>
 <body>
+    <div id="close-rules" onclick="window.close()">Close Rules</div>
     <div class="nav">
-        <a href="#getting-started">Getting Started</a>
         <a href="#play">How To Play</a>
-        <a href="#player-turn">Player Turn</a>
-        <a href="#enemies">Enemies Turn</a>
+        <a href="#player-turn">Player</a>
+        <a href="#enemies">Enemy</a>
     </div>
 
     <div class="container">
-        <h1>Welcome to Dungeon Dice</h1>
+        <h1>Dungeon Dice Rules</h1>
         <p>Embark on an adventurous journey through dungeons filled with dangers and treasures. Use your wits and dice to navigate through challenging scenarios and emerge victorious!</p>
 
         <h2 id="getting-started">Getting Started</h2>

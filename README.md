@@ -1,12 +1,12 @@
 # DungeonDice: An Open Source Adventure Game
 
-Welcome to **DungeonDice**, a delightful, open-source game designed to spark imagination and adventure. Created in collaboration with my daughter, this game is a testament to fun, creativity, and family bonding. It's perfect for players ages 5 and up, offering an accessible and entertaining experience for all.
+Welcome to **DungeonDice**, a delightful, open-source board game with this companion app designed to spark imagination and adventure. Created in collaboration with my daughter, this game is a testament to fun, creativity, and family bonding. It's perfect for players ages 5 and up, offering an accessible and entertaining experience for all.
 
 ## What you need to play!
 You will need to have some dice: about 10 d6 and 3-4 d4 and a full set of d20 for special characters.<br>
 You will need to either print or use some graph paper for 4x4 tiles. I have included some stl if you want to 3d print your doors (clips) and dungeon tiles for your game like I have mine. They are located in `/game_peices`.<br>
 You need to read the rules which are in the companion app but also in this repo under `/public/rules.html` . <br>
-The companion app is running and free for anyone to play at [DungeonDice.net](https://dungeondice.net). <br>
+You will either need to run the companion app yourseif or access a hosted copy here [DungeonDice.net](https://dungeondice.net). <br>
 Get ready to explore, overcome obstacles, and collect rewards!
 
 ## About This Repository
