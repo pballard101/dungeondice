@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Dungeon Game Rules</title>
+    <title>Dungeon Dice Game Rules</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,60 +22,63 @@
         p, ul {
             margin-bottom: 10px;
         }
+        .nav {
+            background: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
         /* Additional styling can be added here */
     </style>
 </head>
 <body>
+    <div class="nav">
+        <a href="#getting-started">Getting Started</a>
+        <a href="#play">How To Play</a>
+        <a href="#player-turn">Player Turn</a>
+        <a href="#enemies">Enemies Turn</a>
+    </div>
+
     <div class="container">
-        <h1>Welcome to Dice Dungeon</h1>
+        <h1>Welcome to Dungeon Dice</h1>
         <p>Embark on an adventurous journey through dungeons filled with dangers and treasures. Use your wits and dice to navigate through challenging scenarios and emerge victorious!</p>
 
-        <h2>Game Setup</h2>
+        <h2 id="getting-started">Getting Started</h2>
         <p>To play Dice Dungeon, you will need:</p>
         <ul>
             <li>A set of standard six-sided dice (d6).</li>
             <li>Each player will need one d6 dice and one four-sided dice (d4).</li>
             <li>Dungeon tiles or a way to represent the dungeon layout.</li>
         </ul>
+       
+        <h2 id="play">How to Play!</h2>
+        <p>Start by placing the first dungeon tile and positioning each player's character, represented by a d6, on the tile. Place one door on the tile to indicate an exit or entrance.<br>
+        Determine order of the hero dice, this stays the same the entire game. That player can now take the turn<br>
+        When a door is opened, click the draw card button the app. <br>
+        When the tile is cleared or completed, roll a d6 if its an even number place 2 doors anywhere you like in the room if its an odd number place 1<br>
+        Each player starts with 3 lives and a maximum health of 6. <br>
+        Adjust the d6 to represent current health. When damaged by enemies or cards<br>
+        Losing all health results in a loss of one life and restarting with full health.<br>
+        If any player loses all lives, the scenario is restarted.</p>
 
-        <h2>Game Rules</h2>
-
-        <h3>When to Draw a Card?</h3>
+        <h2 id="player-turn">Player Turn</h2>
+        <p>Each player can perform two actions per turn in any order. The actions include:</p>
         <ul>
-            <li>Draw a card whenever you open a door.</li>
-            <li>Follow instructions on the card. If no door placement is specified, roll a 1d6: even - one door, odd - two doors.</li>
+            <li><strong>Move:</strong> Roll a d6 to determine how many spaces you can move. Move your character after the roll</li>
+            <li><strong>Melee Attack:</strong> Attack an adjacent enemy by rolling a d6 for damage.</li>
+            <li><strong>Ranged Attack:</strong> Attack an ememy dice one tile away or diagonally with d4 for damage. You can shoot through allies but not enemies</li>
+            <li><strong>Heal:</strong> Roll a d4 to heal yourself, adjacent, or diagonally ally.</li>
         </ul>
 
-        <h3>Enemy Tiles:</h3>
-        <ul>
-            <li>Enemies are represented by numbers in the grid within the app.</li>
-            <li>Place a 1d6 down with that number, representing their health.</li>
-        </ul>
-
-        <h3>Enemy Actions:</h3>
-        <ul>
-            <li>Enemies perform one attack and one movement action per turn, unless stated otherwise in the app.</li>
-            <li>Enemies roll a 1d6 for movement and a 1d4 for attack.</li>
-            <li>Enemies target the closest player or the last one who damaged them.</li>
-        </ul>
-
-        <h3>Player Turns and Actions:</h3>
-        <ul>
-            <li>Each player can perform two actions per turn: Move, Melee Attack, Ranged Attack, Heal.</li>
-        </ul>
-
-        <h3>Health and Lives:</h3>
-        <ul>
-            <li>Each player starts with 3 lives and a maximum health of 6.</li>
-        </ul>
-        
-        <h3>Winning the Game:</h3>
-        <p>Complete the mission objectives while keeping all players alive through the end of the scenario.</p>
-
-        <h3>Tips and Strategies:</h3>
-        <ul>
-            <li>Work as a team and balance your strategies between attack and defense.</li>
-        </ul>
+        <h2 id="enemies">Enemies Turn</h2>
+        <p>Enemies always go second in inititive. When you open a door the hero's will get to finish their current cycle of turns before the enemies turn.<br>
+        Enemies on the board will move and attack during their turn.<br> 
+        Roll a 1d6 for the enemies to move Enemies target the closest player or the last player to attack them. In case of equal distance, the players decide who gets attacked.<br>
+        Enemies roll a 1d4 and can only do malee attacks</p>
     </div>
 </body>
 </html>
+
