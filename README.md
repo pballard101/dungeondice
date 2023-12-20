@@ -14,7 +14,7 @@ This repository is more than just code; it's a portal to endless adventures. Her
 
 - **Browser-Based State Management:** The game's state is stored in your browser. Refreshing the browser means restarting the adventure.
 - **Extensibility and Creativity:** Both obstacle tiles and rewards are designed to be flexible and not mission-specific. This means the game can grow and evolve with community contributions.
-- **Community Contributions:** Follow the fuide below to expand dungeon dice. Feel free to push a PR to me!
+- **Community Contributions:** Follow the guide below to expand dungeon dice. Feel free to push a PR to me!
 
 ## How to Contribute
 

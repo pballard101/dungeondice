@@ -105,3 +105,39 @@ img {
     top: 0;
     right: 0;
 }
+#riddleContainer {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    max-width: 600px;
+    display: none; /* Initially hidden */
+}
+
+#riddleContainer p {
+    margin: 10px 0;
+}
+
+#riddleContainer input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#riddleContainer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#riddleContainer button:hover {
+    background-color: #0056b3;
+}

@@ -1,3 +1,6 @@
+import { handleTimerMechanic } from './gamemechanics/timer.js';
+import { handleRiddleMechanic } from './gamemechanics/riddle.js';
+
 let tilesDrawn = 0;
 let currentMission = null;
 let currentStoryTile = 0;
@@ -20,9 +23,14 @@ async function fetchMissions() {
     const response = await fetch('/missions');
     const data = await response.json();
     const missionSelection = document.getElementById('missionSelection');
-    missionSelection.innerHTML = data.missions.map(mission =>
-        `<button onclick="loadMission('${mission.missionId}', '${mission.missionName}')">${mission.missionName.replace(/_/g, ' ')}</button>`
+    missionSelection.innerHTML = data.missions.map((mission, index) =>
+        `<button id="missionButton${index}">${mission.missionName.replace(/_/g, ' ')}</button>`
     ).join('');
+
+    // Attach event listeners to the buttons
+    data.missions.forEach((mission, index) => {
+        document.getElementById(`missionButton${index}`).addEventListener('click', () => loadMission(mission.missionId, mission.missionName));
+    });
 }
 
 function loadMission(missionId, missionName) {
@@ -49,7 +57,10 @@ function loadMission(missionId, missionName) {
     drawCardButton.onclick = drawCard;
     const timerContainer = document.getElementById('timerContainer');
     timerContainer.style.display = 'none';
+    document.getElementById('riddleContainer').style.display = 'none';
 }
+
+window.loadMission = loadMission;
 
 function clearPreviousContent() {
     const gridContainer = document.getElementById('gridContainer');
@@ -175,66 +186,6 @@ function drawObstacleCard() {
         });
 }
 
-function handleTimerMechanic(durationInSeconds) {
-    const timerDisplay = document.getElementById('timerDisplay');
-    console.log("Timer mechanic found. Duration:", durationInSeconds);
-
-    const startTimerButton = document.getElementById('startTimerButton');
-    startTimerButton.style.display = 'block'; 
-    startTimerButton.onclick = function() {
-        console.log('start button pressed');
-        // First hide the start button
-        startTimerButton.style.display = 'none'; 
-
-        // Start the countdown lead-in
-        startCountdownLeadIn(timerDisplay, durationInSeconds);
-    };
-}
-
-function startCountdownLeadIn(displayElement, duration) {
-    let countdown = 5;  // 5 seconds lead-in countdown
-    displayElement.innerText = 'Get ready... ' + countdown;
-    console.log('Lead-in started:', countdown); // Log the start
-    
-    const countdownInterval = setInterval(function() {
-        countdown--;
-        console.log('Countdown:', countdown); // Log each decrement
-
-        if (countdown >= 0) {
-            displayElement.innerText = 'Get ready... ' + countdown;
-        } else {
-            clearInterval(countdownInterval);
-            console.log('Lead-in finished, starting main timer'); // Log end of lead-in
-            // Start the main timer after the countdown lead-in completes
-            startMainTimer(duration, displayElement);
-        }
-    }, 1000);
-}
-
-function startMainTimer(duration, displayElement, buttonElement) {
-    console.log('starting main time');
-    let remainingTime = duration;
-    displayElement.innerText = remainingTime;
-    const interval = setInterval(function() {
-        remainingTime--;
-        displayElement.innerText = remainingTime;
-
-        if (remainingTime <= 0) {
-            clearInterval(interval);
-            displayElement.innerText = 'Time\'s up!';
-            if(buttonElement) { 
-                buttonElement.style.display = 'none';
-            }
-        }
-    }, 1000);
-
-    if(buttonElement) {
-        buttonElement.style.display = 'none'; 
-    }
-}
-
-
-
 function drawEnemyCard() {
     fetch('/enemies')
         .then(response => response.json())
@@ -313,21 +264,35 @@ function drawStoryCard() {
                 });
             });
 
-            // Retrieve the timerContainer
+            // Retrieve the timerContainer and riddleContainer
             const timerContainer = document.getElementById('timerContainer');
-
-            // Check if the current story card has a game mechanic of type 'timer'
+            const riddleContainer = document.getElementById('riddleContainer');
+            
+            // Check the game mechanic type
             if (data.game_mechanic_type === "timer" && data.timer_length) {
                 timerContainer.style.display = 'block';  // Show the timer container
-                handleTimerMechanic(data.timer_length); // Use the handleTimerMechanic function here
+                handleTimerMechanic(data.timer_length); // Use the handleTimerMechanic function
             } else {
                 timerContainer.style.display = 'none';  // Hide the timer container
+            }
+
+            if (data.game_mechanic_type === 'riddle') {
+                handleRiddleMechanic(data); // Call handleRiddleMechanic with the tile data
+            } else {
+                riddleContainer.style.display = 'none'; // Hide the riddle container
             }
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
         });
 }
+
+
+function openRules() {
+    window.open('rules.html', 'Rules', 'width=500,height=500');
+}
+
+document.getElementById('rules-icon').addEventListener('click', openRules);
 
 
 

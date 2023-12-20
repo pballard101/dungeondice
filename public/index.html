@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dungeon Dice</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <a href="#" id="rules-icon" onclick="openRules()">
         <img src="images/diceqmark.png" alt="Rules" height="50" width="50">
@@ -35,14 +33,13 @@
             <button id="startTimerButton">Start</button>
             <div id="timerDisplay"></div>
         </div>
+        <div id="riddleContainer">
+            <p id="riddleText"></p>
+            <input type="text" id="riddleAnswer" placeholder="Enter your answer">
+            <button onclick="submitRiddleAnswer()">Submit Answer</button>
+            <p id="riddleFeedback"></p>
+        </div>
     </div>
-    <script>
-        function openRules() {
-            window.open('rules.html', 'Rules', 'width=500,height=500');
-        }
-        </script>
-
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
-
 </html>

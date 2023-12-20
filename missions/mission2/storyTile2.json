@@ -1,12 +1,14 @@
 {
-    "mission": 1,
-    "tileNumber": 1,
-    "description": "Some description for mission 2, tile 2.",
-    "grid": [
-        ["empty", "empty", "enemy"],
-        ["empty", "empty", "empty"],
-        ["empty", "empty", "empty"]
-    ],
-    "additionalData": "Any other data you'd like to store for this tile"
+    "mission": 2,
+    "tileNumber": 2,
+    "description": "In the depths of the enchanted forest, you encounter a wise old fairy name Twinkletoes Sparklewhiskers who speaks in riddles. Solve its riddle to find the path forward.",
+    "grid": [],
+    "additionalData": "",
+    "game_mechanic_type": "riddle",
+    "riddleText": "I'm light as a feather, yet the strongest person can't hold me for much more than a minute. What am I?",
+    "riddleAnswer": "breath",
+    "riddleMaxGuesses": "3",
+    "riddleSuccess": "Twinkletoes Sparklewhiskers cheers in approval, and a hidden path reveals itself.",
+    "riddleFailure": "Twinkletoes Sparklewhiskers screeches in disappointment, and the path remains hidden. You loose one life and the hidden path reveals itself"
 }
 
