@@ -74,6 +74,8 @@ function clearPreviousContent() {
     // Hide timer by default in the clear function
     const timerContainer = document.getElementById('timerContainer');
     timerContainer.style.display = 'none';
+    const riddleContainer = document.getElementById('riddleContainer');
+    riddleContainer.style.display = 'none';
 }
 
 function drawCard() {
@@ -277,7 +279,7 @@ function drawStoryCard() {
             }
 
             if (data.game_mechanic_type === 'riddle') {
-                handleRiddleMechanic(data); // Call handleRiddleMechanic with the tile data
+                handleRiddleMechanic(data); // Call handleRiddleMechanic 
             } else {
                 riddleContainer.style.display = 'none'; // Hide the riddle container
             }

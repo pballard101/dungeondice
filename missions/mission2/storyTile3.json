@@ -1,12 +1,11 @@
 {
-    "mission": 1,
-    "tileNumber": 1,
-    "description": "Some description for mission 2, tile 3.",
-    "grid": [
-        ["empty", "empty", "enemy"],
-        ["empty", "empty", "empty"],
-        ["empty", "empty", "empty"]
-    ],
-    "additionalData": "Any other data you'd like to store for this tile"
+    "mission": 2,
+    "tileNumber": 3,
+    "description": "You step into the room and the floor collapses beneath you. You fall far far down into a pit of water. Please hold your breath and swim to the top to climb out of the pit. If you can hold your breath you loose one life ",
+    "grid":[],
+    "additionalData": "Any other data you'd like to store for this tile",
+    "game_mechanic_type": "timer",
+    "timer_length": "55"
 }
+
 

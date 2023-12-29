@@ -1,11 +1,12 @@
 {
-    "mission": 1,
+    "mission": 2,
     "tileNumber": 1,
-    "description": "Some description for mission 2, tile 1.",
+    "description": "You have come into a clearing in the forest, light falls on your face for the first time in your travels. You feel a chill in the air, the light turns to darkness and lightning stikes a large stump in the middle of the clearing. You see a large figure standing on the stump. You have come to the wrong place travelers, you will not make it out of here alive. The figure steps off the stump and small objects that you now see are evil fairies surround the figure protecting it. Setup the room like the grid below.",
     "grid": [
-        ["empty", "empty", "enemy"],
-        ["empty", "empty", "empty"],
-        ["empty", "empty", "empty"]
+        ["", "", "",""],
+        ["", "2", "2","2"],
+        ["", "2", "10","2"],
+        ["", "2", "2","2"]
     ],
     "additionalData": "Any other data you'd like to store for this tile"
 }

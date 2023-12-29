@@ -1,0 +1,14 @@
+{
+    "mission": 2,
+    "tileNumber": 4,
+    "description": "You enter into a huge hollowed out tree trunk where in the center you see a bright purple glowing light, a swarm of red-eyed faries surround the orb. The orb strikes you with a jolt of electricity and all travelers in your part loose 1 health. Please setup the room below and defeat the orb. At the end of players turn you will ad a new fairy to the room that has 4 health. The orb will heal itself for 2 life and shock all hereos for 1 health. The faries will take a normal enemy turn",
+    "grid": [
+        ["4", "", "","4"],
+        ["", "4", "",""],
+        ["", "", "20",""],
+        ["", "", "","4"]
+    ],
+    "additionalData": "Any other data you'd like to store for this tile"
+}
+
+
